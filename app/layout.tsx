@@ -4,7 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/app/components/Navbar";
 import TopSection from "@/app/components/topSection";
-import CarModels from "@/app/components/second_sectionn"
+import CarModels from "@/app/components/second_section"
 import Thirdsection from "@/app/components/third-section"
 import Footer from "./components/footer";
 import FirstSection from "./components/first";

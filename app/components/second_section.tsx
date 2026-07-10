@@ -3,10 +3,10 @@ import "./style.css";
 import * as React from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import gsap from "gsap";
-import { useState, useRef } from "react";
-import "@google/model-viewer";
+import { useState, useRef, useEffect } from "react";
+// import "@google/model-viewer";
 import { Space_Grotesk, Inter } from "next/font/google";
-// import { useGSAP } from "@gsap/react";
+
 
 const space = Space_Grotesk({
     weight: "700",
@@ -22,6 +22,9 @@ export default function CarModels() {
     const cars1 = useRef(null)
     const heading1 = useRef(null)
     const paragraph1 = useRef(null)
+     useEffect(() => {
+        import("@google/model-viewer");
+    }, []);
     const cars = [
         "https://cqqaylmfpuadhwwaryxq.supabase.co/storage/v1/object/public/models/bmw_m4_gt3-compressed.glb",
         "https://cqqaylmfpuadhwwaryxq.supabase.co/storage/v1/object/public/models/free_bmw_m3_e30-compressed.glb",
@@ -115,6 +118,9 @@ export default function CarModels() {
                         min-camera-orbit="auto 75deg auto"
                         max-camera-orbit="auto 75deg auto"
                     />
+                    {/* <div className="w-full h-full bg-gray-800 text-white flex items-center justify-center">
+  Model Placeholder
+</div> */}
                 </div>
             </div>
             <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-3 z-50">
