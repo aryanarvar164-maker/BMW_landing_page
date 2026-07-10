@@ -3,7 +3,7 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import {Black_Ops_One} from "next/font/google";
-import MuxPlayer from "@mux/mux-player-react";
+// import MuxPlayer from "@mux/mux-player-react";
 import {Rubik} from "next/font/google";
 
 const blacko = Black_Ops_One({
