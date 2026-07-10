@@ -36,7 +36,7 @@ const Navbar = () => {
         </Button>
     
         
-      <Button className="ml-180">
+      <Button className="ml-130">
         <Image src="/gif/nav1.gif" alt="" width={55} height={55} />
       </Button>
       </div>

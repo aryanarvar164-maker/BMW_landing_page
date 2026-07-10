@@ -3,6 +3,7 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import {Black_Ops_One} from "next/font/google";
+import MuxPlayer from "@mux/mux-player-react";
 import {Rubik} from "next/font/google";
 
 const blacko = Black_Ops_One({
@@ -99,7 +100,7 @@ export default function TopSection() {
       </Carousel>
 
       {/* Bottom Dots */}
-      <div className="absolute bottom-19 left-1/2 -translate-x-1/2 flex items-center gap-3 z-50">
+      <div className="absolute bottom-11 left-1/2 -translate-x-1/2 flex items-center gap-3 z-50">
         {videos.map((_, index) => (
           <button
             key={index}
