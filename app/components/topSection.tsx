@@ -41,7 +41,11 @@ export default function TopSection() {
   const [api, setApi] = React.useState<any>();
   const [current, setCurrent] = React.useState(0);
 
-  const videos = [clip1, clip2, clip3];
+  const videos = [
+  clip1 as any,
+  clip2 as any,
+  clip3 as any,
+];
   const headings = ["Pure Motorsport Heritage","The Beginning of Greatness","The Ultimate Driving Machine"];
   const subheadings = ["Racing Legacy","Where Legends Begin","Engineered for Every Curve"];
 

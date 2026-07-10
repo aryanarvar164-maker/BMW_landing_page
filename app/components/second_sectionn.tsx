@@ -1,6 +1,4 @@
 "use client"
-
-
 import "./style.css";
 import * as React from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -8,6 +6,7 @@ import gsap from "gsap";
 import { useState, useRef } from "react";
 import "@google/model-viewer";
 import { Space_Grotesk, Inter } from "next/font/google";
+// import { useGSAP } from "@gsap/react";
 
 const space = Space_Grotesk({
     weight: "700",
